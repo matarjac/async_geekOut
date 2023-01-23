@@ -8,6 +8,22 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="search-section">
+      <div id="search-input-container">
+        <input type="text" placeholder="Search" />
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="dropdown">
+        <button id="drop-btn" class="link">Filter by region</button>
+        <div id="menu" class="dropdown-menu">
+          <button id="africa">Africa</button>
+          <button id="america">America</button>
+          <button id="asia">Asia</button>
+          <button id="europe">Europe</button>
+          <button id="oceania">oceania</button>
+        </div>
+      </div>
+    </div>
     <div id="page"></div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>

@@ -14,6 +14,23 @@ body {
   margin-right: 5%;
   gap: 5%;
 }
+#search-section {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+  gap: 5%;
+}
+input {
+  width: 400px;
+  height: 30px;
+}
+#search-btn {
+  height: 30px;
+  width: 100px;
+}
 
 .country-div {
   height: 300px;
@@ -40,4 +57,45 @@ ul {
 
 h3 {
   padding-left: 10px;
+}
+
+/* dropdown menu */
+
+.link {
+  background-color: white;
+  border: 1px black solid;
+  height: 40px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  /* pointer-events: none; */
+  /* transform: translateY(-10px); */
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+/* .dropdown > .link:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+} */
+
+a {
+  text-decoration: none;
+  color: black;
 }
